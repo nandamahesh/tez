@@ -11,7 +11,7 @@ if [ $ENVIRONMENT = "QA" ];then
      
      sleep 5
      
-     sshpass -p "weblogic@123" scp -rp /home/ubuntu/dummy/target/*.jar mahesh@13.126.144.36:/home/mahesh/apache-tomcat-8.5.32/webapps
+     sshpass -p "weblogic@123" scp -rp /home/ubuntu/dummy/target/*.jar mahesh@$i:/home/mahesh/apache-tomcat-8.5.32/webapps
 
      echo "Starting tomcat Server in $i QA Servers.."
 
